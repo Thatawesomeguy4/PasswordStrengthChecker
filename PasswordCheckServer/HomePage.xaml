@@ -10,8 +10,8 @@
 
     <Grid Background="Black">
         <Button x:Name="brute" Content="Brute Force" HorizontalAlignment="Left" Margin="309,83,0,0" VerticalAlignment="Top" Width="182" Height="45" Click="Brute_Click"/>
-        <Button x:Name="dictionary" Content="Dictionary" HorizontalAlignment="Left" Margin="309,174,0,0" VerticalAlignment="Top" Width="182" Height="45"/>
-        <Button x:Name="bruteAndDictionary" Content="Brute Force and Dictionary" HorizontalAlignment="Left" Margin="309,264,0,0" VerticalAlignment="Top" Width="182" Height="45"/>
+        <Button x:Name="dictionary" Content="Dictionary" HorizontalAlignment="Left" Margin="309,174,0,0" VerticalAlignment="Top" Width="182" Height="45" IsEnabled="False"/>
+        <Button x:Name="bruteAndDictionary" Content="Brute Force and Dictionary" HorizontalAlignment="Left" Margin="309,264,0,0" VerticalAlignment="Top" Width="182" Height="45" IsEnabled="False"/>
 
     </Grid>
 </Page>
