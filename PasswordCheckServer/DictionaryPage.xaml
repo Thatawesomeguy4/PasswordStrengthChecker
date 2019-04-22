@@ -1,0 +1,30 @@
+﻿<Page x:Class="PasswordCheckServer.DictionaryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PasswordCheckServer"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BruteForcePage">
+
+    <Grid Background="Black">
+        <Label Content="Enter a Password an Push the Button to Start" Foreground="Snow" HorizontalAlignment="Left" Margin="262,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="passwordBox" HorizontalAlignment="Left" Height="23" Margin="262,62,0,0" TextWrapping="Wrap" Text="Password Here" VerticalAlignment="Top" Width="154"/>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="433,62,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="StartButton_Click"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="28" Margin="27,238,0,0" VerticalAlignment="Top" Width="752"/>
+        <Label x:Name="percentNumber" Content="0%" HorizontalAlignment="Left" Margin="385,238,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label x:Name="timeElapsed" Content="Not Started" Foreground="Snow" HorizontalAlignment="Left" Margin="153,297,0,0" VerticalAlignment="Top"/>
+        <Label Content="Elapsed Time:" Foreground="Snow" HorizontalAlignment="Left" Margin="71,298,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="currentGuess" Content="Not Started" Foreground="Snow" HorizontalAlignment="Left" Margin="501,297,0,0" VerticalAlignment="Top"/>
+        <Label Content="Guessing:" Foreground="Snow" HorizontalAlignment="Left" Margin="440,297,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="possibleCombosLabel" Content="Not Started" Foreground="Snow" HorizontalAlignment="Left" Margin="204,346,0,0" VerticalAlignment="Top"/>
+        <Label Content="Passwords:" Foreground="Snow" HorizontalAlignment="Left" Margin="71,346,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="triedPasswords" Content="Not Started" Foreground="Snow" HorizontalAlignment="Left" Margin="204,376,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tried Passwords:" Foreground="Snow" HorizontalAlignment="Left" Margin="71,376,0,0" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="progressBar_Loader" HorizontalAlignment="Left" Height="28" Margin="27,148,0,0" VerticalAlignment="Top" Width="752"/>
+        <Label x:Name="percentNumber_Loader" Content="0%" HorizontalAlignment="Left" Margin="385,148,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="Dictionary Load Progress:" Foreground="Snow" HorizontalAlignment="Left" Margin="321,117,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
