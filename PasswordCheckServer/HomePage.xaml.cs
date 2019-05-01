@@ -30,5 +30,10 @@ namespace PasswordCheckServer
             BruteForcePage brute = new BruteForcePage();
             this.NavigationService.Navigate(brute);
         }
+
+        private void Dictionary_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
