@@ -33,7 +33,8 @@ namespace PasswordCheckServer
 
         private void Dictionary_Click(object sender, RoutedEventArgs e)
         {
-
+            DictionaryPage dictionary = new DictionaryPage();
+            this.NavigationService.Navigate(dictionary);
         }
     }
 }
